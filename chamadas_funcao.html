@@ -1,0 +1,33 @@
+<HTML html>
+<head>
+<title>Trabalhando com parâmetros</title>
+<meta charset="utf-8">
+</head>
+<bdy>
+<h1>Entendo a ordem de chamada das Funções em JavaScript</h1>
+<script type="text/javascript">
+    //Funções
+    function primeiro() {
+    	 console.log("1ª - Antes");
+    	 segunda();
+    	 console.log("1ª - Depois");
+
+    }
+
+    function segunda() {
+    	 console.log("2ª - Depois");
+    	 terceira();
+    	 console.log("2ª - Depois");
+
+    }
+    function terceira() {
+    	 console.log("3ª")
+
+    }
+    //código principal
+    primeira();
+  </script>
+  </body>
+  </html>
+   
+     
