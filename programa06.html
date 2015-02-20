@@ -1,0 +1,29 @@
+<DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>Trabalhando com Funçõe</title>
+</head>
+<body>
+	<h1>Funções com Parametros</h1>
+	<script type="text/javascript">
+	//Declare e nomea uma função chana pulaLinha
+        function pulaLinha() {
+        	//Corpo da função, bloco de código de que realiza uma tarefa.
+        	document.write("<br>")
+            }
+            //cria uma função que recebe um parâmetro e exibe uma mansagem(dado){]
+             function mostra(dado) {
+        	document.write(dado)
+        	pulaLinha();
+            }
+             function calcularIMC(peso, altura) {
+             	var IMC = peso / (altura * altura);
+             	//Passando para a função mostra exibir o resultado.
+             	//Usamaos o metódo round da classe Math para arrendondar.
+             	mostra("Seu IMC é: " + Math.round(IMC));
+             	}
+             	//chama a função para a realização do cáculo.
+             	calculaIMC(73, 1.70);
+             </script>
+         </body>
+         </html>
