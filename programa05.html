@@ -1,0 +1,29 @@
+<DOCTYPE html>
+<head>
+	<title>Trabalhando com Funçõe</title>
+	<meta charset="utf-8">
+</head>
+    <h1>Mais Funções no JavaScript</h1>
+    <script type="text/javascript">
+        //Declare e nomea uma função chana pulaLinha
+        function pulaLinha() {
+        	//Corpo da função, bloco de código de que realiza uma tarefa.
+        	document.write("<br>");
+            }
+        	//cria uma função que recebe um parâmetro e exibe uma mansagem(dado){
+        	document.write("dado");
+
+        }
+        function calcularIMC() {
+            var peso = 73;
+            var altura = 1.70;
+            var imc = peso / (altura * altura);
+            //Passando para a função mostra exibir o resultado.
+            //Usamos o metódo round da classe Math para arredondar.
+        mostra("seu IMC é: " + Math.round(imc));
+        }
+        //Chama a função para a ralização do cáculo.
+        calcularIMC();
+        </script>
+      </body>
+      </html>  
