@@ -1,0 +1,42 @@
+<HTML html>
+<head>
+<title>Estrutura de controle</title>
+<meta charset="utf-8">
+</head>
+<bdy>
+<h1>Entendo o IF</h1>
+<script>
+    function calculaIMC() {
+       /*A função prompt captura a entrada de dados do tecladodo usuário*/
+       //A função parseInt converte uma string para inteiro.
+       var peso = parseInt(prompt("Informe seu peso"));
+       var altura = parseFloat(prompt("Informe sua altura"));
+       var imc = peso / (altura * altura);
+       if (imc < 18) {
+           document.write("Seu IMC é: " + imc + "<br>");
+           document.write("Cuidado, seu status é: Magreza.");
+           }else if (imc > 18 && imc <= 25) {   
+            document.write("Seu IMC é: " + imc + "<br>");
+           document.write("Cuidado, seu status é: Normal.");
+         }else if (imc > 25 && imc <= 30) {
+           document.write("Seu IMC é: " + imc + "<br>");
+           document,write("Cuidado, se status é: Sobrepeso.");
+         }else if (imc > 30 && imc <= 35) {
+          document.write("Seu IMC é: " + imc + "<br>");
+          document.write("Cuidado, seu satatus é: obesidade grau I.");
+        }else if (imc > 35 && IMC <=40) {
+          document.write("Seu IMC é:" + IMC + "<br>");
+          document.write("obesidade Grau II");
+        }else {
+          document.write("Cuidado, você esta com obesidade")
+        }
+         
+
+         }
+       }
+    }
+    //chama a função para a realização do cáculo.
+    calculaIMC();
+  </script>
+  </body>
+  </html>
